@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-bg text-ink font-body antialiased; }
+  :focus-visible { outline: 2px solid theme('colors.accent.DEFAULT'); outline-offset: 2px; }
+  ::selection { background: rgba(182, 130, 53, 0.3); }
+}
+
+@layer components {
+  /* Classical: outlined buttons, never filled. */
+  .btn {
+    @apply inline-flex items-center justify-center gap-1.5 whitespace-nowrap font-heading font-semibold
+           text-sm leading-tight rounded border border-transparent px-4 py-2 no-underline cursor-pointer transition-colors;
+  }
+  .btn-primary { @apply text-accent border-accent hover:bg-accent/10 active:bg-accent/20; }
+  .btn-secondary { @apply text-ink border-divider hover:bg-ink/[0.07] active:bg-ink/[0.14]; }
+  .tag { @apply inline-flex items-center text-[11px] px-2.5 py-[3px] rounded-[3px]; }
+  .tag-outline { @apply border border-accent text-accent; }
+  /* The design system's tipped-in plate treatment for photographs. */
+  .plate {
+    @apply box-border border-[6px] border-surface outline outline-1 outline-divider;
+    filter: sepia(0.22) saturate(0.82) contrast(1.05);
+  }
+  .kicker { @apply text-[10.5px] uppercase tracking-[0.18em] text-accent-700 tabular-nums; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
