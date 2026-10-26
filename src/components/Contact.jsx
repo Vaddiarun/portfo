@@ -17,7 +17,17 @@ export default function Contact() {
         </div>
         <div className="mx-auto mt-10 flex max-w-[620px] flex-wrap justify-center gap-8 border-t border-divider pt-7">
           <a href={`mailto:${contact.email}`} className="border-b border-accent pb-0.5 text-[15px] text-ink no-underline hover:text-accent-700">{contact.email}</a>
-          <a href={contact.phoneHref} className="border-b border-accent pb-0.5 text-[15px] text-ink no-underline tabular-nums hover:text-accent-700">{contact.phone}</a>
+        </div>
+        <div className="mx-auto mt-7 flex max-w-[620px] flex-wrap justify-center gap-8">
+          {contact.people.map((person) => (
+            <div key={person.phoneHref} className="flex flex-col items-center gap-1.5">
+              <span className="text-[13px] text-ink/60">{person.name}</span>
+              <a href={person.phoneHref} className="border-b border-accent pb-0.5 text-[15px] text-ink no-underline tabular-nums hover:text-accent-700">{person.phone}</a>
+              {person.email && (
+                <a href={`mailto:${person.email}`} className="border-b border-accent pb-0.5 text-[15px] text-ink no-underline hover:text-accent-700">{person.email}</a>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </section>

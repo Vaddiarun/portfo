@@ -50,8 +50,12 @@ export const projects = [
 ];
 
 export const contact = {
-  email: 'arunsvaddi@gmail.com',
-  phone: '+91 79897 59695',
-  phoneHref: 'tel:+917989759695',
-  whatsapp: 'https://wa.me/917989759695',
+  email: 'bellarychinna78936@gmail.com',
+  phone: '+91 86882 61165',
+  phoneHref: 'tel:+918688261165',
+  whatsapp: 'https://wa.me/918688261165',
+  people: [
+    { name: 'Arun Kumar', phone: '+91 79897 59695', phoneHref: 'tel:+917989759695', email: 'arunsvaddi@gmail.com' },
+    { name: 'Chinna Rayudu', phone: '+91 86882 61165', phoneHref: 'tel:+918688261165' },
+  ],
 };

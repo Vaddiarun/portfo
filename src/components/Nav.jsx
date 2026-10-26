@@ -8,7 +8,7 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 flex items-center gap-8 border-b border-divider bg-bg/90 px-6 py-4 backdrop-blur md:px-10">
       <a href="#top" className="mr-auto font-heading text-lg font-semibold text-ink no-underline">
-        Arun<span className="text-accent"> / </span>Studio
+        Chinna Rayudu<span className="text-accent"> / </span>Studio
       </a>
       <nav className="hidden items-center gap-6 md:flex">
         {links.map((l) => (
