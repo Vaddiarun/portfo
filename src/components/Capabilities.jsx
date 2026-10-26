@@ -1,4 +1,6 @@
 import Kicker from './Kicker';
+import Stack from './Stack';
+import BuildAnything from './BuildAnything';
 
 const CAPABILITIES = [
   ['01', 'UI/UX', 'Research, user flows, wireframes, visual systems and production-ready interfaces.'],
@@ -32,6 +34,9 @@ export default function Capabilities() {
           </div>
         ))}
       </div>
+
+      <BuildAnything />
+      <Stack />
     </section>
   );
 }

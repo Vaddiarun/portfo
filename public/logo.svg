@@ -1,15 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Studio logo">
-  <!-- Orbits from the hero orrery: one core, several disciplines in motion around it. -->
-  <circle cx="32" cy="32" r="30" fill="none" stroke="#201f1d" stroke-opacity=".22" stroke-width="1.2"/>
-  <g fill="none" stroke-width="2.2">
-    <ellipse cx="32" cy="32" rx="26" ry="9" stroke="#b68235" transform="rotate(-18 32 32)"/>
-    <ellipse cx="32" cy="32" rx="20" ry="11" stroke="#e8622a" transform="rotate(52 32 32)"/>
-    <ellipse cx="32" cy="32" rx="14" ry="6" stroke="#7d5411" transform="rotate(-62 32 32)"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="64" viewBox="0 0 300 64" role="img" aria-label="Devorbit">
+  <!-- Full lockup: mark + wordmark, for documents, social profiles and invoices. -->
+  <g transform="translate(32 32) rotate(-20)" fill="none" stroke="#b68235" stroke-width="3.4" stroke-linecap="round">
+    <path d="M -28 0 A 28 12 0 0 1 28 0"/>
   </g>
-  <circle cx="32" cy="32" r="5.5" fill="#201f1d"/>
-  <circle cx="32" cy="32" r="2.2" fill="#b68235"/>
-  <!-- Planets riding each orbit -->
-  <circle cx="56.7" cy="24" r="3.2" fill="#b68235"/>
-  <circle cx="19.7" cy="16.2" r="2.8" fill="#e8622a"/>
-  <circle cx="25.4" cy="44.4" r="2.4" fill="#7d5411"/>
+  <circle cx="32" cy="32" r="16" fill="#201f1d"/>
+  <g fill="none" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 25.5 26.5 L 20.5 31.5 L 25.5 36.5" stroke="#f3f2f2"/>
+    <path d="M 38.5 26.5 L 43.5 31.5 L 38.5 36.5" stroke="#f3f2f2"/>
+    <path d="M 34 24.5 L 30 38.5" stroke="#b68235"/>
+  </g>
+  <g transform="translate(32 32) rotate(-20)" fill="none" stroke="#b68235" stroke-width="3.4" stroke-linecap="round">
+    <path d="M -28 0 A 28 12 0 0 0 28 0"/>
+  </g>
+  <circle cx="58.3" cy="22.4" r="4.4" fill="#e8622a"/>
+  <text x="76" y="44" font-family="'Cormorant Garamond', Georgia, serif" font-size="40" font-weight="600" letter-spacing="0.5">
+    <tspan fill="#201f1d">Dev</tspan><tspan fill="#7d5411">orbit</tspan>
+  </text>
 </svg>

@@ -1,5 +1,6 @@
 import { contact } from '../data/projects';
 import Kicker from './Kicker';
+import InquiryForm from './InquiryForm';
 
 const waLink = (phoneHref) => `https://wa.me/${phoneHref.replace(/\D/g, '')}`;
 
@@ -7,7 +8,7 @@ export default function Contact() {
   return (
     <section id="contact" className="border-t border-divider [perspective:1400px]">
       <div className="mx-auto max-w-[1240px] px-6 pb-28 pt-24 md:px-10 [transform-style:preserve-3d]">
-        <Kicker n="05" className="mb-16">Contact</Kicker>
+        <Kicker n="07" className="mb-16">Contact</Kicker>
         <div className="text-center">
           <h2 data-reveal data-tilt="6"
               className="mb-6 font-heading text-[clamp(34px,5vw,76px)] font-normal leading-[1.04] tracking-tight [transform-style:preserve-3d]">
@@ -17,7 +18,7 @@ export default function Contact() {
             Tell us what you're building. We'll help turn the idea into a real product.
           </p>
           <div data-reveal className="flex flex-wrap justify-center gap-3">
-            <a href={`mailto:${contact.email}`} className="btn btn-primary px-7 py-3 text-[15px]">Start a conversation</a>
+            <a href="#inquiry" className="btn btn-primary px-7 py-3 text-[15px]">Start a conversation</a>
             <a href={contact.whatsapp} target="_blank" rel="noopener noreferrer" className="btn btn-secondary px-7 py-3 text-[15px]">WhatsApp</a>
           </div>
           <a href={`mailto:${contact.email}`}
@@ -25,6 +26,8 @@ export default function Contact() {
             {contact.email}
           </a>
         </div>
+
+        <InquiryForm />
 
         <div data-reveal className="mx-auto mt-14 grid max-w-[760px] border-l border-t border-divider sm:grid-cols-2">
           {contact.people.map((person) => (

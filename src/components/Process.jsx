@@ -1,13 +1,13 @@
 import Kicker from './Kicker';
 
 const STAGES = [
-  ['01', 'Discover', 'Understand the business, users and problem.'],
-  ['02', 'Define', 'Turn requirements into a clear product strategy.'],
-  ['03', 'Design', 'Create flows, wireframes and production-ready UI.'],
-  ['04', 'Build', 'Develop frontend, backend, mobile applications and integrations.'],
-  ['05', 'Test', 'Validate functionality, performance and edge cases.'],
-  ['06', 'Deploy', 'Move the product into production with proper infrastructure.'],
-  ['07', 'Improve', 'Monitor, iterate and continuously improve the product.'],
+  ['01', 'Discover', 'Understand the business, users and problem.', 'Call notes and a list of goals'],
+  ['02', 'Define', 'Turn requirements into a clear product strategy.', 'Written scope, timeline and price'],
+  ['03', 'Design', 'Create flows, wireframes and production-ready UI.', 'Clickable prototype to approve'],
+  ['04', 'Build', 'Develop frontend, backend, mobile applications and integrations.', 'Working builds in weekly demos'],
+  ['05', 'Test', 'Validate functionality, performance and edge cases.', 'Tested release candidate'],
+  ['06', 'Deploy', 'Move the product into production with proper infrastructure.', 'Live product, source code and docs'],
+  ['07', 'Improve', 'Monitor, iterate and continuously improve the product.', 'Updates on an optional support plan'],
 ];
 
 export default function Process() {
@@ -19,12 +19,15 @@ export default function Process() {
           From idea to production.
         </h2>
         <ol data-tilt="8" className="m-0 list-none border-t border-divider p-0 [transform-style:preserve-3d]">
-          {STAGES.map(([n, title, body]) => (
+          {STAGES.map(([n, title, body, deliverable]) => (
             <li key={n} data-reveal
                 className="grid items-baseline gap-6 border-b border-divider py-6 transition-[padding] duration-300 hover:pl-3.5 md:grid-cols-[90px_220px_1fr]">
               <span className="font-heading text-3xl text-accent tabular-nums">{n}</span>
               <h3 className="font-heading text-[22px] font-semibold">{title}</h3>
-              <p className="text-[14.5px] leading-[1.7] text-ink/75">{body}</p>
+              <div>
+                <p className="text-[14.5px] leading-[1.7] text-ink/75">{body}</p>
+                <p className="mt-1.5 text-[13px] text-accent-700"><span className="kicker mr-2">You get</span>{deliverable}</p>
+              </div>
             </li>
           ))}
         </ol>

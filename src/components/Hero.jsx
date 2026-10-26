@@ -1,14 +1,22 @@
 import Orrery from './Orrery';
+import { availability } from '../data/content';
 
-const STATS = [['9', 'Specialists'], ['4+', 'Years each'], ['2', 'Apps live']];
+const STATS = [['9', 'Full-stack engineers'], ['4+', 'Years each'], ['2', 'Apps live']];
 
 export default function Hero() {
   return (
     <section id="top" className="mx-auto grid min-h-[74vh] max-w-[1240px] items-center gap-14 px-6 py-20 md:grid-cols-[1.05fr_.95fr] md:px-10">
       <div>
+        <a href="#inquiry" className="mb-8 inline-flex items-center gap-2.5 rounded-full border border-divider px-3.5 py-1.5 text-[12.5px] text-ink no-underline hover:border-accent">
+          <span className="relative flex h-2 w-2">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#3f9a5a] opacity-60" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-[#3f9a5a]" />
+          </span>
+          {availability}
+        </a>
         <div className="mb-7 flex items-center gap-3">
           <span className="h-px w-11 bg-accent" />
-          <span className="kicker">Product engineering studio</span>
+          <span className="kicker">Full-stack product engineering</span>
         </div>
         <h1 className="mb-7 font-heading text-[clamp(42px,5.4vw,82px)] font-normal leading-[1.02] tracking-tight text-balance">
           We build digital products that solve real problems.
