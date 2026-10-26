@@ -8,7 +8,7 @@ export default function Intro() {
           <span className="text-accent-700">One complete product team.</span>
         </h2>
         <div data-reveal>
-          <p className="mb-5 text-base leading-[1.8] [hyphens:auto] [text-align:justify]">
+          <p className="mb-5 text-base leading-[1.8]">
             From the first wireframe to production deployment, our team handles the complete product
             lifecycle. Designers, engineers, testers and DevOps specialists work as a single delivery
             unit rather than a chain of handovers.

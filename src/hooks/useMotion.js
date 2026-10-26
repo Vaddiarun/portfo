@@ -50,7 +50,13 @@ export function useScrollDepth() {
         el.style.transform = `rotateX(${(p * amt).toFixed(2)}deg) translateZ(${(-Math.abs(p) * 40).toFixed(1)}px)`;
       });
 
+      // Below sm the fan is a flat swipeable row, so it doesn't swing.
+      const flat = window.innerWidth < 640;
       document.querySelectorAll('[data-fan]').forEach((el) => {
+        if (flat) {
+          el.querySelectorAll('figure').forEach((fig) => { fig.style.transform = ''; });
+          return;
+        }
         const r = el.getBoundingClientRect();
         if (r.bottom < -200 || r.top > vh + 200) return;
         const p = progress(r);

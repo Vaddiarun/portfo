@@ -1,3 +1,5 @@
+import Kicker from './Kicker';
+
 const CAPABILITIES = [
   ['01', 'UI/UX', 'Research, user flows, wireframes, visual systems and production-ready interfaces.'],
   ['02', 'Frontend', 'Responsive, performant web applications and complex interactive interfaces.'],
@@ -10,10 +12,7 @@ const CAPABILITIES = [
 export default function Capabilities() {
   return (
     <section id="capabilities" className="mx-auto max-w-[1240px] px-6 py-24 md:px-10">
-      <div className="mb-11 flex items-baseline gap-4">
-        <span className="kicker">02 — Capabilities</span>
-        <span className="h-px flex-1 bg-divider" />
-      </div>
+      <Kicker n="01">Capabilities</Kicker>
       <h2 className="mb-3 max-w-[18ch] font-heading text-[clamp(28px,3.4vw,48px)] font-normal leading-[1.1] tracking-tight">
         Every discipline a product needs, under one roof.
       </h2>

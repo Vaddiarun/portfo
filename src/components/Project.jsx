@@ -11,7 +11,7 @@ export default function Project({ project, last = false }) {
           <span className="text-[10.5px] uppercase tracking-[0.14em] text-ink/55">{category}</span>
         </div>
         <h3 className="mb-6 font-heading text-[clamp(32px,4vw,56px)] font-normal leading-[1.04] tracking-tight">{name}</h3>
-        <p className="mb-7 max-w-[60ch] text-[15.5px] leading-[1.78] [hyphens:auto] [text-align:justify]">{description}</p>
+        <p className="mb-7 max-w-[60ch] text-[15.5px] leading-[1.78]">{description}</p>
 
         {(problem || solution) && (
           <div className="grid gap-8 border-t border-divider pt-6 sm:grid-cols-2">

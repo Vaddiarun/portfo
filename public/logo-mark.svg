@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Studio logo">
+  <!-- Small-size version of logo.svg: two orbits, heavier strokes, bigger planets. -->
+  <g fill="none" stroke-width="4">
+    <ellipse cx="32" cy="32" rx="26" ry="10" stroke="#b68235" transform="rotate(-18 32 32)"/>
+    <ellipse cx="32" cy="32" rx="22" ry="11" stroke="#e8622a" transform="rotate(52 32 32)"/>
+  </g>
+  <circle cx="32" cy="32" r="8" fill="#201f1d"/>
+  <circle cx="32" cy="32" r="3" fill="#b68235"/>
+  <circle cx="56.7" cy="24" r="5.5" fill="#b68235"/>
+  <circle cx="18.5" cy="14.7" r="5" fill="#e8622a"/>
+</svg>
